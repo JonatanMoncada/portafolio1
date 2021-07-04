@@ -1,1 +1,83 @@
-/* No CSS *//*# sourceMappingURL=miEstilos.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body .contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+body header {
+  background: url("../img/bg.jpg") #49a3d6;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 600px;
+}
+
+body header .menu {
+  margin: 40px 0;
+  text-align: right;
+}
+
+body header .menu a {
+  margin: 0 20px;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 9px;
+  font-size: 1em;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+body header .menu a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+body header .contenedor-texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 190px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body header .contenedor-texto .texto {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+body header .contenedor-texto .texto h1, body header .contenedor-texto .texto h2 {
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+
+body header .contenedor-texto .texto .nombre {
+  margin-bottom: 10px;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+body header .contenedor-texto .texto .profesion {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+/* ---- ---- HEADER ---- ---- */
+/*# sourceMappingURL=miEstilos.css.map */
