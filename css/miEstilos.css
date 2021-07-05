@@ -17,9 +17,10 @@ body .contenedor {
 }
 
 body header {
-  background: url("../img/bg.jpg") #49a3d6;
+  background: url("../img/bg2.jpg") #49a3d6;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   max-height: 600px;
 }
 
@@ -56,10 +57,11 @@ body header .contenedor-texto {
 
 body header .contenedor-texto .texto {
   border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 3px;
+  border-radius: 4px;
   display: inline-block;
   text-align: center;
   padding: 20px 60px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 body header .contenedor-texto .texto h1, body header .contenedor-texto .texto h2 {
@@ -77,6 +79,222 @@ body header .contenedor-texto .texto .nombre {
 body header .contenedor-texto .texto .profesion {
   font-size: 25px;
   line-height: 25px;
+}
+
+body .main .acerca-de {
+  text-align: center;
+}
+
+body .main .acerca-de .contenedor {
+  overflow: visible;
+}
+
+body .main .acerca-de .contenedor .foto {
+  margin-top: -60px;
+}
+
+body .main .acerca-de .contenedor .foto img {
+  vertical-align: top;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+}
+
+body .main .acerca-de .contenedor .texto {
+  color: #5a5a5a;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 30px;
+  width: 80%;
+  margin: 40px auto 60px auto;
+}
+
+body .main .acerca-de .contenedor .texto .titulo {
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #dd820d;
+  text-align: center;
+}
+
+body .main .acerca-de .contenedor .texto .bold {
+  color: #3495ea;
+  text-decoration: underline;
+}
+
+body .main .trabajos {
+  background: #f2f2f2;
+  padding: 60px 0;
+}
+
+body .main .trabajos .contenedor .titulo {
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #323068;
+  text-align: center;
+}
+
+body .main .trabajos .contenedor .contenedor-trabajos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main .trabajos .contenedor .contenedor-trabajos .trabajo {
+  width: 23%;
+  margin-bottom: 40px;
+}
+
+body .main .trabajos .contenedor .contenedor-trabajos .trabajo .thumb {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+body .main .trabajos .contenedor .contenedor-trabajos .trabajo .thumb img {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+body .main .trabajos .contenedor .contenedor-trabajos .trabajo .thumb img:hover {
+  /* border: 1px solid darkgrey;
+                                    padding: 4px;
+                                    background: rgba(224,224,224, 0.99); */
+  opacity: 1;
+}
+
+body .main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion {
+  text-align: center;
+}
+
+body .main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion .nombre {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #3895aa;
+}
+
+body .main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion .categoria {
+  font-size: 14px;
+  color: #636363;
+}
+
+body footer .contacto {
+  padding: 60px 0;
+}
+
+body footer .contacto .titulo {
+  font-size: 34px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #3895ea;
+  text-align: center;
+}
+
+body footer .contacto .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer .contacto .formulario input[type="text"],
+body footer .contacto .formulario input[type="email"],
+body footer .contacto .formulario textarea {
+  border: 2px solid #cecece;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #a4a4a4;
+}
+
+body footer .contacto .formulario input[type="text"]:focus,
+body footer .contacto .formulario input[type="email"]:focus,
+body footer .contacto .formulario textarea:focus {
+  border: 2px solid #3895ea;
+}
+
+body footer .contacto .formulario input[type="text"],
+body footer .contacto .formulario input[type="email"] {
+  width: 49%;
+  margin-bottom: 15px;
+}
+
+body footer .contacto .formulario textarea {
+  width: 100%;
+  height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+
+body footer .contacto .formulario .boton {
+  margin: auto;
+  background: #3895ea;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+body footer .contacto .formulario .boton:hover {
+  background: #387bea;
+}
+
+body footer .redes-sociales {
+  background: #1e2b38;
+  padding: 60px 0;
+}
+
+body footer .redes-sociales .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .redes-sociales .contenedor a {
+  color: #fff;
+  text-align: center;
+  width: 100px;
+  display: block;
+  padding: 15px 0;
+  border-radius: 3px;
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+body footer .redes-sociales .contenedor .facebook:hover {
+  background: #1877f2;
+}
+
+body footer .redes-sociales .contenedor .github:hover {
+  background: #6e5494;
+}
+
+body footer .redes-sociales .contenedor .instagram:hover {
+  background: #405de6;
 }
 
 /* ---- ---- HEADER ---- ---- */
