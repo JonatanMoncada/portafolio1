@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+@mixin tamanio800px {
+    @media screen and (max-width:800px) {
+        @content
+    }
+}
+
+@mixin tamanio500px {
+    @media screen and (max-width:500px) {
+        @content
+    }
+}
+
 body{
     background: #fff;
     font-family: "Open Sans", sans-serif;
@@ -22,6 +34,9 @@ body{
         .menu{
             margin: 40px 0;
             text-align: right;
+            @include tamanio800px(){
+                text-align: center;
+            }
             a{
                 margin: 0 20px;
                 color: #fff;
@@ -57,10 +72,16 @@ body{
                     margin-bottom: 10px;
                     font-size: 50px;
                     line-height: 50px;
+                    @include tamanio500px(){
+                        font-size: 35px;
+                    }
                 }
                 .profesion{                    
                     font-size: 25px;
                     line-height: 25px;
+                    @include tamanio500px(){
+                        font-size: 18px;
+                    }
                 }
             }
         }        
@@ -121,21 +142,26 @@ body{
                     .trabajo{
                         width: 23%;
                         margin-bottom:40px;
+                        background: #fff;
+                        opacity: 0.8; 
+                        //border-radius: 4px;
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                        &:hover{
+                            /* border: 1px solid darkgrey;
+                            padding: 4px;
+                            background: rgba(224,224,224, 0.99); */
+                            opacity: 1;
+                        }
+                        @include tamanio800px(){
+                            width: 46%;
+                        }
                         .thumb{
                             width: 100%;
                             margin-bottom: 10px;
                             img{
                                 width: 100%;
                                 vertical-align: top;
-                                border-radius: 4px;
-                                opacity: 0.7; 
-                                                               
-                                &:hover{
-                                    /* border: 1px solid darkgrey;
-                                    padding: 4px;
-                                    background: rgba(224,224,224, 0.99); */
-                                    opacity: 1;
-                                }
+                                border-radius: 4px 4px 0 0;                                                                                        
                             }
                         }
                         .descripcion{
@@ -170,6 +196,7 @@ body{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                
                 input[type="text"],
                 input[type="email"],
                 textarea{
@@ -186,6 +213,10 @@ body{
                 input[type="email"]{
                     width: 49%;
                     margin-bottom: 15px;
+                    @include tamanio500px(){
+                        //flex-direction: column;
+                        width: 100%;
+                    }
                 }
                 textarea{
                     width: 100%;
@@ -216,6 +247,10 @@ body{
             .contenedor{
                 display: flex;
                 justify-content: center;
+                @include tamanio500px(){
+                    flex-wrap: wrap;
+                    padding: 20px 0;
+                }
                 a{
                     color: #fff;
                     text-align: center;
